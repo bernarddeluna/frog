@@ -12,6 +12,11 @@ body {height:100%;}
 	z-index:3;
 	padding: 15px 10px;
 	background:#e7e7e7;
+	background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,.1) 120%);
+	background-image: -moz-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,.1) 120%);
+	background-image: -o-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,.1) 120%);
+	background-image: -ms-linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,.1) 120%);
+	background-image: linear-gradient(top, rgba(0,0,0,0) 50%, rgba(0,0,0,.1) 120%);
 	border-bottom:1px solid #ccc;
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,.4);
 }
@@ -79,12 +84,15 @@ body {height:100%;}
    HEADER
    ========================================================================== */
 .logo {
-	color:#2b2b2b;
+	color:#656960;
 	font-size:24px;
-	font-weight: bolder;
+	font-weight: lighter;
 	letter-spacing:-0.04em;
 }
-
+.logo span {
+	position:relative;
+	top:2px;
+}
 
 /* =============================================================================
    ELEMENTS
