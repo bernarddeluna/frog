@@ -3,8 +3,85 @@
 <head>
 	<meta charset="UTF-8">
 	<title></title>
+	<script src="js/codemirror/lib/codemirror.js"></script>
+	<link rel="stylesheet" href="js/codemirror/lib/codemirror.css">
+	<script src="js/codemirror/javascript.js"></script>
+   <script src="js/codemirror/css.js"></script>
+	<link rel="stylesheet" href="css/reset.css" media="screen" />
+	<link rel="stylesheet" href="css/style.css" media="screen" />
 </head>
 <body>
-	
+	<header class="header">
+		<h1 class="logo">FroG - Front-end Guide</h1>
+	</header>
+	<section class="content">
+		<section class="elements">
+			<nav class="elements-nav">
+				<ul class="elements-list">
+					<li class="elements-item">
+						<a class="elements-lnk btn btn-new" href="#" title="Criar novo Elemento">Criar novo Elemento</a>
+					</li>
+					<li class="elements-item">
+						<a class="elements-lnk" href="#" title="Texto normal">Texto normal</a>
+					</li>
+					<li class="elements-item current">
+						<a class="elements-lnk" href="#" title="Link normal">Link normal</a>
+					</li>
+					<li class="elements-item">
+						<a class="elements-lnk" href="#" title="Botão primário">Botão primário</a>
+					</li>
+					<li class="elements-item">
+						<a class="elements-lnk" href="#" title="Botão secundário">Botão secundário</a>
+					</li>
+				</ul>
+			</nav>
+		</section>
+		<section class="editor">
+			
+		</section>
+		<section class="view">
+			<form><textarea id="code" name="code">
+/* Some example CSS */
+
+@import url("something.css");
+
+body {
+  margin: 0;
+  padding: 3em 6em;
+  font-family: tahoma, arial, sans-serif;
+  color: #000;
+}
+
+#navigation a {
+  font-weight: bold;
+  text-decoration: none !important;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+h1:before, h2:before {
+  content: "::";
+}
+
+code {
+  font-family: courier, monospace;
+  font-size: 80%;
+  color: #418A8A;
+}
+</textarea></form>
+		</section>
+
+	</section>
+	<footer class="footer"></footer>
+
+	<script>
+      var editor = CodeMirror.fromTextArea(document.getElementById("code"), {});
+    </script>
 </body>
 </html>
