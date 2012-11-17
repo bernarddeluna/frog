@@ -40,6 +40,7 @@ body {height:100%;}
 	padding: 20px;
 	position:relative;
 	height:100%;
+	display: none;
 }
 .view {
 	position: absolute;
@@ -180,7 +181,7 @@ textarea, input[type="text"] {
 }
 .CodeMirror-scroll {
 	overflow:auto;
-	height:300px;
+	height: 415px;
 	position:relative;
 }
 .CodeMirror-gutter {

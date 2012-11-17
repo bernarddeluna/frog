@@ -19,24 +19,26 @@
 			<nav class="elements-nav">
 				<ul class="elements-list">
 					<li class="elements-item">
-						<a class="elements-lnk btn btn-new" href="#" title="Criar novo Elemento">Criar novo Elemento</a>
-					</li>
-					<li class="elements-item">
-						<a class="elements-lnk" href="#" title="Texto normal">Texto normal</a>
+						<a class="elements-lnk btn btn-new" href="#text-normal" title="Criar novo Elemento">Criar novo Elemento</a>
 					</li>
 					<li class="elements-item current">
-						<a class="elements-lnk" href="#" title="Link normal">Link normal</a>
+						<a class="elements-lnk" href="#text-normal" title="Texto normal">Texto normal</a>
 					</li>
 					<li class="elements-item">
-						<a class="elements-lnk" href="#" title="Botão primário">Botão primário</a>
+						<a class="elements-lnk" href="#link-normal" title="Link normal">Link normal</a>
 					</li>
 					<li class="elements-item">
-						<a class="elements-lnk" href="#" title="Botão secundário">Botão secundário</a>
+						<a class="elements-lnk" href="#botao-primario" title="Botão primário">Botão primário</a>
+					</li>
+					<li class="elements-item">
+						<a class="elements-lnk" href="#botao-secundario" title="Botão secundário">Botão secundário</a>
 					</li>
 				</ul>
 			</nav>
 		</section>
-		<section class="editor">
+
+		<!-- Editor -->
+		<section class="editor" id="text-normal">
 			<div class="columns">
         <label for="">Color</label>
         <span class="prefix"  style="background: #c60f13">#</span>
@@ -55,7 +57,7 @@
 	    <div class="columns">
 	        <label for="">line-height</label>
 	        <span class="prefix">px</span>
-	        <input type="text" value="2px" placeholder="2px" name="link-height" class="val-cores">
+	        <input type="text" value="2px" placeholder="2px" name="line-height" class="val-cores">
 	    </div>
 	    <div class="columns">
 	        <label for="">border-radius</label>
@@ -72,11 +74,30 @@
 	    </div>
 	    <button id="gerar-coding">gerar</button>
 		</section>
+		<section class="editor" id="link-normal">
+			aba 2
+		</section>
+		<section class="editor" id="botao-primario">
+			aba 3
+		</section>
+		<section class="editor" id="botao-secundario">
+			aba 4
+		</section>
+		<!-- end Editor -->
+
 		<section class="view">
 			<div class="view-css">
 				<h2>Ver CSS</h2>
 				<form>
-					<textarea id="code" name="code"></textarea>
+					<textarea id="code" name="code">.app {
+	color: #c60f13;
+	background-color: #cc9977;
+	font-size: 12px;
+	line-height: 2px;
+	border-radius: 5px;
+	text-decoration: undeline;
+	font-style: italic;
+}</textarea>
 				</form>
 			</div>
 		</section>
