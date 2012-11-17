@@ -40,6 +40,7 @@ body {height:100%;}
 	padding: 20px;
 	position:relative;
 	height:100%;
+	display: none;
 }
 .view {
 	position: absolute;
@@ -214,7 +215,7 @@ h2 {
 }
 .CodeMirror-scroll {
 	overflow:auto;
-	height:300px;
+	height: 415px;
 	position:relative;
 }
 .CodeMirror-gutter {
