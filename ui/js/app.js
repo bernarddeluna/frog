@@ -42,19 +42,29 @@ $("#gerar-coding").click(function(){
 	Editor();
 })
 
+//Create elemments
+$(".btn-new").click(function() {
+	var nameElemment = window.prompt("", "ex: Header");
+
+	$(".elements-list").append('<li class="elements-item"><a class="elements-lnk" href="#' + nameElemment.toLowerCase() +'" title="' + nameElemment +'">' + nameElemment +'</a></li>')
+
+	return false;
+
+})
+
 
 //Abas Elements
-$(function(){
-	$(".editor:first").show();
-	$(".elements-nav a").click(function(){ 
-		$(".editor").hide(); 
-		var div = $(this).attr('href'); 
-		$(div).fadeIn(""); 
-			$(".elements-nav a").parent().removeClass('current'); 
-			$(this).parent().addClass('current'); 
-		return false;
-	})
-});
+// $(function(){
+// 	$(".editor:first").show();
+// 	$(".elements-nav a").click(function(){ 
+// 		$(".editor").hide(); 
+// 		var div = $(this).attr('href'); 
+// 		$(div).fadeIn(""); 
+// 			$(".elements-nav a").parent().removeClass('current'); 
+// 			$(this).parent().addClass('current'); 
+// 		return false;
+// 	})
+// });
 
 //Syntax highlighter
 var Editor = function() {
