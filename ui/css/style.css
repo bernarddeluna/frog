@@ -99,6 +99,7 @@ body {height:100%;}
 	line-height: 1.2em;
 	color:#777;
 }
+.elements-lnk:hover, .elements-lnk:focus {color:#333;}
 .current .elements-lnk {
 	position:relative;
 	right:-1px;
@@ -148,12 +149,23 @@ textarea, input[type="text"] {
 	transition: border linear 0.2s, box-shadow linear 0.2s;
 }
 
-
-
-/* codemirror */
-/* code mirror */
-.CodeMirror {
+/* =============================================================================
+   VIEW
+   ========================================================================== */
+.view h2 {
+	padding: 10px;
+	background:#111;
+	font-size:2em;
+	color:#fff;
+	font-size:1.8em;
+	line-height:1em;
+	font-weight: normal;
+	text-transform: uppercase;
 }
+
+
+/* CODE MIRROR (CODE) */
+
 .CodeMirror {
 	line-height:1em;
 	font-family:monospace;
