@@ -23,16 +23,29 @@ var selectColors = function() {
 //Generate coding css
 var pegaValor = function() {
 	var elemento = $(".val-cores");
+	
+	$("#code").empty();
 
 	for( i = 0; i < elemento.length; i++ ){
     var e = elemento[i];
-    console.log( e.name + ": " + e.value );
-    $("#code").append( e.name + ": " + e.value + '\n\n' )
+    var source = [ e.name + ": " + e.value + '\n' ];
+
+    $("#code").append( source );
   }
+
+  $(".CodeMirror:first").show();
+  $(".CodeMirror").hide();
+}
+
+
+var Editor = function() {
+	var editor = CodeMirror.fromTextArea(document.getElementById("code"), {});
 }
 
 $("#gerar-coding").click(function(){
 	pegaValor();
+	Editor();
 })
 
+Editor();
 selectColors();
