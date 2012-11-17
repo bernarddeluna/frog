@@ -40,7 +40,9 @@
 			
 		</section>
 		<section class="view">
-			<form><textarea id="code" name="code">
+			<div class="view-css">
+				<h2>Ver CSS</h2>
+				<form><textarea id="code" name="code">
 /* Some example CSS */
 
 @import url("something.css");
@@ -75,13 +77,15 @@ code {
   color: #418A8A;
 }
 </textarea></form>
+			</div>
+			
 		</section>
 
 	</section>
 	<footer class="footer"></footer>
 
 	<script>
-      var editor = CodeMirror.fromTextArea(document.getElementById("code"), {});
-    </script>
+  	var editor = CodeMirror.fromTextArea(document.getElementById("code"), {});
+  </script>
 </body>
 </html>
