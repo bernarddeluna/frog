@@ -37,7 +37,7 @@ body {height:100%;}
 }
 .editor {
 	margin: 0 350px 0 200px;
-	padding: 25px 20px 20px;
+	padding: 25px 30px 20px;
 	position:relative;
 	height:100%;
 	display: none;
@@ -64,6 +64,7 @@ h2 {
 	color:#333;
 	margin-bottom:.5em;
 }
+h2 span {font-weight: lighter;}
 .btn {
 	padding: 10px 20px;
 	display: inline-block;
@@ -131,15 +132,21 @@ h2 {
 	color:#777;
 }
 .elements-lnk:hover, .elements-lnk:focus {color:#333;}
-.current .elements-lnk {
+.current {
 	position:relative;
 	right:-1px;
 	padding-right: 14px;
 	border-top:1px solid #ccc;
 	border-bottom:1px solid #ccc;
 	background: #f4f4f4 none;
+}
+.current .elements-lnk {
 	color:#2b2b2b;
 	font-weight: bolder;
+}
+.current .btn-new {
+	color:#fff;
+	font-weight: normal;
 }
 
 /* =============================================================================
@@ -206,6 +213,23 @@ h2 {
 	text-transform: uppercase;
 }
 
+.view-demo {
+	position:relative;
+	height:100px;
+	margin: 20px;
+	padding: 20px;
+	font-size:14px;
+	text-align:center;
+	background:#fff;
+	border-radius: 8px;
+}
+.view-demo span{
+	display: inline-block;
+	position:absolute;
+	top:40%;
+	left:20px;
+	right:20px;
+}
 
 /* CODE MIRROR (CODE) */
 
