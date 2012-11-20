@@ -46,7 +46,7 @@ $("#gerar-coding").click(function(){
 $(".btn-new").click(function() {
 	var nameElemment = window.prompt("", "ex: Header");
 
-	$(".elements-list").append('<li class="elements-item"><a class="elements-lnk" href="#' + nameElemment.toLowerCase() +'" title="' + nameElemment +'">' + nameElemment +'</a></li>')
+	$(".elements-list").append('<li class="elements-item"><a class="elements-lnk" href="#' + nameElemment.toLowerCase().replace(" ", "-") +'" title="' + nameElemment +'">' + nameElemment +'</a></li>')
 
 	return false;
 
