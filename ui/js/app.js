@@ -12,7 +12,7 @@ var selectColors = function() {
 	var contentColors = function(arg) {
 		var self = $(arg).parent().find(".prefix");
 		var color = $(arg).val();
-		
+
 		if ( color.length >= 5 ) {
 			$(self).attr("style", "background: #" + color.replace("#", "") + "!important" );
 		};
@@ -26,15 +26,22 @@ var pegaValor = function() {
 	var str = '';
 
 	for( i = 0; i < elemento.length; i++ ){
-    var e = elemento[i];
-    var source = "	" + e.name + ": " + e.value + ';\n';
-    str += source;
-  }
+        var e = elemento[i];
+        var source = "	" + e.name + ": " + e.value + ';\n';
+        str += source;
+      }
 
-  $("#code").text( "." + $(".current a").text().replace(" ", "-").toLowerCase() + " {\n" + str + "}" );
+    var rpl = str.replace("background-color: ", "background-color: #");
+    var sourceStr = rpl.replace("color: ", "color: #");
 
-  $(".CodeMirror:first").show();
-  $(".CodeMirror").hide();
+    console.log( sourceStr );
+
+    $("#css-demo").empty();
+    $("#code").text( "." + $(".current a").text().replace(" ", "-").toLowerCase() + " {\n" + sourceStr + "}" );
+    $("#css-demo").append( "<style type='text/css'> .view-demo {\n" + sourceStr + " } \n </style> " );
+
+    $(".CodeMirror:first").show();
+    $(".CodeMirror").hide();
 }
 
 $("#gerar-coding").click(function(){
@@ -56,12 +63,12 @@ $(".btn-new").click(function() {
 //Abas Elements
 // $(function(){
 // 	$(".editor:first").show();
-// 	$(".elements-nav a").click(function(){ 
-// 		$(".editor").hide(); 
-// 		var div = $(this).attr('href'); 
-// 		$(div).fadeIn(""); 
-// 			$(".elements-nav a").parent().removeClass('current'); 
-// 			$(this).parent().addClass('current'); 
+// 	$(".elements-nav a").click(function(){
+// 		$(".editor").hide();
+// 		var div = $(this).attr('href');
+// 		$(div).fadeIn("");
+// 			$(".elements-nav a").parent().removeClass('current');
+// 			$(this).parent().addClass('current');
 // 		return false;
 // 	})
 // });
