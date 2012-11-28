@@ -40,6 +40,7 @@ body {height:100%;}
 	padding: 25px 30px 20px;
 	position:relative;
 	height:100%;
+	display: none;
 }
 .view {
 	position: absolute;

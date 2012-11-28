@@ -21,7 +21,7 @@
 					<li class="elements-item">
 						<a class="elements-lnk btn btn-new" href="#text-normal" title="Criar novo Elemento">Criar novo Elemento</a>
 					</li>
-					<li class="elements-item current">
+					<!-- <li class="elements-item current">
 						<a class="elements-lnk" href="#text-normal" title="Texto normal">Texto normal</a>
 					</li>
 					<li class="elements-item">
@@ -32,56 +32,15 @@
 					</li>
 					<li class="elements-item">
 						<a class="elements-lnk" href="#botao-secundario" title="Botão secundário">Botão secundário</a>
-					</li>
+					</li>  -->
 				</ul>
 			</nav>
 		</section>
 
 		<!-- Editor -->
-		<section class="editor" id="text-normal">
-		<h2>Editor: <span>Texto normal</span></h2>
-			<div class="columns">
-        <label for="">Color</label>
-        <input type="text" value="c60f13" placeholder="Hex: cc8899" name="color" maxlength="6" class="val-cores" />
-        <span class="prefix"  style="background: #c60f13">#</span>
-    </div>
-    <div class="columns">
-        <label for="">background</label>
-        <input type="text" value="cc9977" placeholder="Hex:cc8899" name="background-color" maxlength="6" class="val-cores" />
-        <span class="prefix"  style="background: #cc9977">#</span>
-    </div>
-    <div class="columns">
-        <label for="">font-size</label>
-        <input type="text" value="12px" placeholder="12" name="font-size" class="val-cores" />
-        <span class="sufix">px</span>
-    </div>
-    <div class="columns">
-        <label for="">line-height</label>
-        <input type="text" value="2px" placeholder="2" name="line-height" class="val-cores" />
-        <span class="sufix">px</span>
-    </div>
-    <div class="columns">
-        <label for="">border-radius</label>
-        <input type="text" value="5px" placeholder="5" name="border-radius" class="val-cores" />
-        <span class="sufix">px</span>
-    </div>
-    <div class="columns">
-        <label for="">text-decoration</label>
-        <select placeholder="underline" name="text-decoration" class="val-cores">
-        	<option value="none">None</option>
-        	<option value="underline">Underline</option>
-        </select>
+		<div id="content-editor">
 
-    </div>
-    <div class="columns">
-        <label for="">font-style</label>
-        <input type="text" value="italic" placeholder="italic" name="font-style" class="val-cores">
-    </div>
-
-    <div class="row">
-    	<button class="btn btn-save" id="gerar-coding">Salvar</button>
-    </div>
-		</section>
+            </div><!-- /content-editor -->
 		<!-- end Editor -->
 
 		<section class="view">
@@ -93,15 +52,7 @@
 			<div class="view-css">
 				<h2>Ver CSS</h2>
 				<form>
-					<textarea id="code" name="code">.app {
-	color: #c60f13;
-	background-color: #cc9977;
-	font-size: 12px;
-	line-height: 2px;
-	border-radius: 5px;
-	text-decoration: undeline;
-	font-style: italic;
-}</textarea>
+					<textarea id="code" name="code"></textarea>
 				</form>
 			</div>
 		</section>
