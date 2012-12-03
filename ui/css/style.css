@@ -186,7 +186,7 @@ h2 span {font-weight: lighter;}
 	margin-left:-3px;
 	border-radius: 0 4px 4px 0;
 }
-.editor textarea, .editor input[type="text"], .editor select {
+.editor textarea, .editor input[type="text"], .editor input[type="number"], .editor select {
 	display:inline-block;
 	background-color: white;
 	color: #777;
